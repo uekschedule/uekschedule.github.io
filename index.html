@@ -5,69 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UEKSchedule</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: #8d0126;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
-      background: #004080;
+      background: var(--primary-color);
       color: white;
       padding: 2rem;
       text-align: center;
     }
 
     main {
+      flex: 1;
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
 
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+
     .store-button {
       display: inline-block;
-      background: black;
+      background: var(--primary-color);
       color: white;
       padding: 0.8rem 1.2rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      transition: background 0.3s;
     }
 
     .store-button:hover {
-      background: #333;
+      background: #6b001d;
     }
 
     footer {
+      background: #e0e0e0;
       text-align: center;
       padding: 1rem;
-      background: #e0e0e0;
       font-size: 0.9rem;
-    }
-
-    img.app-icon {
-      width: 120px;
-      border-radius: 20px;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>UEKSchedule</h1>
-    <p>Your schedule manager for Uniwersytet Ekonomiczny w Krakowie</p>
+    <p>Your schedule manager for Cracow University of Economics</p>
   </header>
 
   <main>
-    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/5e/98/40/5e98400a-2430-87b9-4416-3b8dbba10db3/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" alt="UEKSchedule icon" class="app-icon" />
-
     <h2>About the App</h2>
     <p>
-      <strong>UEKSchedule</strong> is an indispensable app for students of the Cracow University of Economics. It offers convenient tracking of class schedules by allowing the selection of groups and browsing events.
+      <strong>UEKSchedule</strong> is an indispensable app for students of the Cracow University of Economics.
+      It offers convenient tracking of class schedules by allowing the selection of groups and browsing events.
     </p>
-    
+
     <p>At your disposal:</p>
     <ul>
       <li>Widgets</li>
@@ -79,7 +115,6 @@
       <li>Campus map</li>
       <li>Exporting classes to the system calendar</li>
     </ul>
-
 
     <a
       class="store-button"
