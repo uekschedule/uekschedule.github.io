@@ -1,28 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEK Schedule</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1 {
-            color: #007acc;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UEKSchedule</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .store-button {
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .store-button:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0e0e0;
+      font-size: 0.9rem;
+    }
+
+    img.app-icon {
+      width: 120px;
+      border-radius: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>UEK Schedule</h1>
+  <header>
+    <h1>UEKSchedule</h1>
+    <p>Your schedule manager for Uniwersytet Ekonomiczny w Krakowie</p>
+  </header>
+
+  <main>
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/5e/98/40/5e98400a-2430-87b9-4416-3b8dbba10db3/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" alt="UEKSchedule icon" class="app-icon" />
+
+    <h2>About the App</h2>
+    <p>
+      <strong>UEKSchedule</strong> is an indispensable app for students of the Cracow University of Economics. It offers convenient tracking of class schedules by allowing the selection of groups and browsing events.
+    </p>
+    
+    <p>At your disposal:</p>
+    <ul>
+      <li>Widgets</li>
+      <li>Teams and Moodle</li>
+      <li>Rector's hours</li>
+      <li>Notifications</li>
+      <li>Class notes</li>
+      <li>Hiding classes</li>
+      <li>Campus map</li>
+      <li>Exporting classes to the system calendar</li>
+    </ul>
+
+
+    <a
+      class="store-button"
+      href="https://apps.apple.com/pl/app/uek-schedule/id6468822571"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download on the App Store
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2025 UEKSchedule. Created by Sebastian Staszczyk.
+  </footer>
 </body>
 </html>
